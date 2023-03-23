@@ -11,7 +11,7 @@ public class In_Example1 {
 		int edad_usuario=in.nextInt();
 		System.out.println("Hola "+nombre_usuario+". El año que viene tendrás "
 		+(edad_usuario+1)+" años.");
-		
+		in.close();
 
 	}
 
