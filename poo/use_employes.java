@@ -16,6 +16,10 @@ public class use_employes {
 		myemployes[3]=new employe("Antonio Fernández");
 		myemployes[4]=leader_RRHH;//Polimorfismo o Principio de sustitucion
 		myemployes[5]=new leadership("Yud",30000,1994,06,25);
+		
+		leadership leader_finance=(leadership)myemployes[5];
+		leader_finance.set_incentive(5000);
+		
 				
 		for(employe e: myemployes) {
 			e.rise_salary(5);
@@ -31,7 +35,7 @@ public class use_employes {
 
 }
 
-class employe{
+    class employe{
 	
 	public employe(String names, double salarys, int years, int months, int days) {
 		
@@ -45,9 +49,7 @@ class employe{
 	
 	public employe(String names) {
 		this(names,15000,2000,01,01);
-		id=next_id;
-		next_id++;
-	}
+		}
 	
 	public String giveme_name() {//getter
 		return name;
@@ -75,7 +77,7 @@ class employe{
 	
 }
 
-class leadership extends employe{
+    class leadership extends employe{
 
 	public leadership(String names, double salarys, int years, int months, int days) {
 		
@@ -96,3 +98,10 @@ class leadership extends employe{
 	private double incentive;
 	
 }
+    /*class ceo extends leadership{
+	   
+	   public ceo(String names, double salarys, int years, int months, int days) {
+		   super(names,salarys,years,months,days);
+	   }
+	   
+   }*/
