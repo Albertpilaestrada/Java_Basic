@@ -22,7 +22,7 @@ public class car {
 	public String get_general_data() {//método getter
 		return "The base of car have "+wheels+" wheels"+". Measure "+length/1000+
 			" meters long with a wide of "+wide+"cm, a plataworm weight of "+plataform_weight+
-			"kg and power engine of "+engine+"horsepower";
+			"kg and power engine of "+engine+" horsepower";
 	}
 	
 	public void set_color(String car_color) {
