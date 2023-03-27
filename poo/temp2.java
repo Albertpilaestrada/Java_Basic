@@ -28,15 +28,7 @@ class clock{
 	}
 	
 	public void ongoing() {
-		ActionListener listener=new getme_time2();
-		Timer mytemporizer=new Timer(interval,listener);
-		mytemporizer.start();
-	}
-	
-	private int interval;
-	private boolean sound;
-	
-	private class getme_time2 implements ActionListener{
+		class getme_time2 implements ActionListener{
 		
 		public void actionPerformed(ActionEvent event) {
 			
@@ -49,5 +41,14 @@ class clock{
 		}
 		
 	}
+		ActionListener listener=new getme_time2();
+		Timer mytemporizer=new Timer(interval,listener);
+		mytemporizer.start();
+	}
+	
+	private int interval;
+	private boolean sound;
+	
+	
 }
 
