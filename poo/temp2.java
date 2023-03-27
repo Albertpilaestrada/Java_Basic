@@ -21,8 +21,6 @@ public class temp2 {
 
 class clock{
 	
-        }
-	
 	public void ongoing(int interval, final boolean sound) {
 		class getme_time2 implements ActionListener{
 		
@@ -43,4 +41,3 @@ class clock{
 	}
 		
 }
-
