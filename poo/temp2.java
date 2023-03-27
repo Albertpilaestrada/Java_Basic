@@ -10,8 +10,8 @@ public class temp2 {
 
 	public static void main(String[] args) {
 		
-		clock myclock=new clock(5000,true);
-		myclock.ongoing();
+		clock myclock=new clock();
+		myclock.ongoing(5000,true);
 		JOptionPane.showMessageDialog(null, "Press acept for stop");
 		System.exit(0);
 
@@ -21,13 +21,9 @@ public class temp2 {
 
 class clock{
 	
-	public clock(int interval,boolean sound) {
+        }
 	
-	this.interval=interval;
-	this.sound=sound;
-	}
-	
-	public void ongoing() {
+	public void ongoing(int interval, final boolean sound) {
 		class getme_time2 implements ActionListener{
 		
 		public void actionPerformed(ActionEvent event) {
@@ -45,10 +41,6 @@ class clock{
 		Timer mytemporizer=new Timer(interval,listener);
 		mytemporizer.start();
 	}
-	
-	private int interval;
-	private boolean sound;
-	
-	
+		
 }
 
